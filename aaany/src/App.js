@@ -47,7 +47,7 @@ class App extends Component {
               <Gallery2018 />
             </div>
           )}/>
-          <div className="copyright text-center">© 2018 Aligarh Alumni Association New York. All Rights Reserved.</div>
+          <div className="copyright text-center" id="footer">© 2018 Aligarh Alumni Association New York. All Rights Reserved.</div>
         </div>
       </BrowserRouter>
 
