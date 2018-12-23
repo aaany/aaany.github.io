@@ -5,10 +5,14 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
+    "list-react-files": "^0.2.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-image-gallery": "^0.8.12",
+    "react-responsive-carousel": "^3.1.45",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "react-sound": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
