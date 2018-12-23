@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import Sound from "react-sound";
+import soundfile from "./tarana.mp3";
 
 class Song extends Component {
     render() {
         return (
             <Sound 
-                url = "./tarana.mp3"
-                playStatus = {Sound.status.PLAYING}
+                url = {soundfile}
+                playStatus = {Sound.status.PAUSED}
+                playFromPosition = {8000}
                 onLoading={this.handleSongLoading}
                 onPlaying={this.handleSongPlaying}
                 onFinishedPlaying={this.handleSongFinishedPlaying}
