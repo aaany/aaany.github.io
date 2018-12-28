@@ -7,7 +7,7 @@ class Song extends Component {
         return (
             <Sound 
                 url = {soundfile}
-                playStatus = {Sound.status.PAUSED}
+                playStatus = {Sound.status.PLAYING}
                 playFromPosition = {8000}
                 onLoading={this.handleSongLoading}
                 onPlaying={this.handleSongPlaying}
@@ -17,4 +17,4 @@ class Song extends Component {
     }
 }
 
-export default Song
+export default Song;

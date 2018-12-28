@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Events.css"
+import { Link } from "react-router-dom";
 
 class Events extends Component {
     render() {
@@ -31,7 +32,7 @@ class Events extends Component {
                     </tr>
                     <tr>
                         <td>
-                            <a href="/gallery2018">Sir Syed Day Mushaira 2018</a>
+                            <Link to="/gallery2018">Sir Syed Day Mushaira 2018</Link>
                         </td>
                     </tr>
                 </table>

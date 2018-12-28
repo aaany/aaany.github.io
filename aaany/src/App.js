@@ -13,43 +13,21 @@ import { BrowserRouter, Route } from "react-router-dom"
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Song />
-          <Navbar />
-          <Route exact={true} path = "/" render={() => (
-            <div className = "App">
-              <Main />
-            </div>
-          )}/>
-          <Route exact={true} path = "/about" render={() => (
-            <div className = "App">
-              <About />
-            </div>
-          )}/>
-          <Route exact={true} path = "/events" render={() => (
-            <div className = "App">
-              <Events />
-            </div>
-          )}/>
-          <Route exact={true} path = "/contact" render={() => (
-            <div className = "App">
-              <Contact />
-            </div>
-          )}/>
-          <Route exact={true} path = "/donate" render={() => (
-            <div className = "App">
-              <Donate />
-            </div>
-          )}/>
-          <Route exact={true} path = "/gallery2018" render={() => (
-            <div className = "App">
-              <Gallery2018 />
-            </div>
-          )}/>
-          <div className="copyright text-center" id="footer">© 2018 Aligarh Alumni Association New York. All Rights Reserved.</div>
-        </div>
-      </BrowserRouter>
+      <React.Fragment>
+        <Song />
+        <BrowserRouter>
+          <div>
+            <Navbar />
+            <Route exact={true} path="/" component={Main}/>
+            <Route path="/about" component={About}/>
+            <Route path="/events" component={Events}/>
+            <Route path="/contact" component={Contact}/>
+            <Route path="/donate" component={Donate}/>
+            <Route path = "/gallery2018" component={Gallery2018}/>
+          </div>
+        </BrowserRouter>
+        <div className="copyright text-center" id="footer">© 2018 Aligarh Alumni Association New York. All Rights Reserved.</div>
+      </React.Fragment>
 
     );
   }
